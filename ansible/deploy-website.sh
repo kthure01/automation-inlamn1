@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
-dir=$(pwd)
+dir=$(dirname $0)
 ansible-playbook -i $dir/playbooks/inventory.yml $dir/playbooks/deploy-website.yml
