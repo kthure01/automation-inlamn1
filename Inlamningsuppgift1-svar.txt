@@ -16,7 +16,14 @@ Frågor
 	tyckte det fanns något verktyg som uppfyllde de önskemål han hade.
 	
 ● Vad är en pipeline i Jenkins?
+	En pipline är en uppsättning verktyg (plugins) som gör det möjligt att
+	automatisera flödet för implementation och produktionssättning av mjukvara.
+
 ● Beskriv vad Jenkins är samt alternativ till Jenkins
+	Jenkins är ledande vad gäller att erbjuda stöd för att bygga,
+	produktionssätta och automatisera processen för att släppa
+	nya versioner av t.ex websidor.
+
 ● Beskriv vad Ansible är samt alternativ till Ansible
     Skapades av Michael DeHaan 2012.
 
