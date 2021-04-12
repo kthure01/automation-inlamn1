@@ -1,0 +1,10 @@
+---
+- name: Deploy the website content to the web serrver
+  hosts: webserver 
+  become: yes
+  tasks:
+  - name: Copy index.html to src folder
+    copy:
+      src: ../../website/index.html
+      dest: /var/www/html/
+      mode: '0444'

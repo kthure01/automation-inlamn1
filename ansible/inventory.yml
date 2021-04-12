@@ -1,0 +1,22 @@
+---
+webserver:
+  hosts: 138.68.145.148
+  vars:
+    domain: website.kthure.com
+    web_user: www-data
+    web_group: www-data
+    ansible_user: root
+    ansible_connection: ssh
+    ansible_ssh_pass: hemkoala
+    ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
+
+jenkinsserver:
+  hosts: 138.68.148.26
+  vars:
+    domain: jenkins.kthure.com
+    web_user: www-data
+    web_group: www-data
+    ansible_user: root
+    ansible_connection: ssh
+    ansible_ssh_pass: hemkoala
+    ansible_ssh_common_args: "-o StrictHostKeyChecking=no"
