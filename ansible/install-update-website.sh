@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 
-ansible-playbook -i playbooks/inventory.yml playbooks/install-lighttpd.yml
-ansible-playbook -i playbooks/inventory.yml playbooks/deploy-website.yml
+dir=$(pwd)
+ansible-playbook -i $dir/playbooks/inventory.yml $dir/playbooks/install-lighttpd.yml
+ansible-playbook -i $dir/playbooks/inventory.yml $dir/playbooks/deploy-website.yml

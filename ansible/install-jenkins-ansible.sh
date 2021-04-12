@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 
-ansible-playbook -i playbooks/inventory.yml playbooks/install-jenkins.yml
-ansible-playbook -i playbooks/inventory.yml playbooks/install-ansible.yml
+dir=$(pwd)
+ansible-playbook -i $dir/playbooks/inventory.yml $dir/playbooks/install-jenkins.yml
+ansible-playbook -i $dir/playbooks/inventory.yml $dir/playbooks/install-ansible.yml
