@@ -3,9 +3,9 @@
   hosts: jenkinsserver
   become: yes
   tasks:
-  - name: Install ansible
-    apt:
-      name: ansible
-      update_cache: yes
-      cache_valid_time: 3600
-      state: latest
+    - name: Install ansible
+      apt:
+        name: ansible
+        update_cache: yes
+        cache_valid_time: 3600
+        state: latest
