@@ -4,7 +4,8 @@
 
 ### Frågor
 
-### * *Vad för typ av historia kan man se i ett verktyg såsom Jenkins?*
+### *Vad för typ av historia kan man se i ett verktyg såsom Jenkins?*
+
 >Jenkins är ett verktyg för att hantera mjukvara. Jenkins används
 för att bygga, testa och produktionssätta mjukvara.
 Jenkins har sitt ursprung i en programvara som hette Hudson. Hudson
@@ -12,37 +13,42 @@ såg dagens ljus 2007. Efter lite turer fram och tillbaka så bestämdes det,
 i januari 2011, att man skulle göra en "fork" av Hudson-projektet och
 Jenkins-projektet såg dagens ljus.
 
-### * *Vad för typ av historia kan man se i ett verktyg såsom Git?*
+### *Vad för typ av historia kan man se i ett verktyg såsom Git?*
+
 >Git skapades av Linus Torvalds runt 2005 som ett verktyg för att hantera
 revitioner av programvarukoden för Linux-kärnan. Anledningaen var att han inte
 tyckte det fanns något verktyg som uppfyllde de önskemål han hade.
 
-### * *Vad är en pipeline i Jenkins?*
+### *Vad är en pipeline i Jenkins?*
+
 >En pipline är en uppsättning verktyg (plugins) som gör det möjligt att
 automatisera flödet för att bygga, testa och produktionssätta mjukvara.
 
-### * *Beskriv vad Jenkins är samt alternativ till Jenkins*
+### *Beskriv vad Jenkins är samt alternativ till Jenkins*
+
 >Jenkins är ledande vad gäller att erbjuda stöd för att bygga,
 produktionssätta och automatisera processen för att släppa
 nya versioner av t.ex websidor.
 Några alternativ är: CruiseControl, Integrity och Buddy.
 
-### * *Beskriv vad Ansible är samt alternativ till Ansible*
+### *Beskriv vad Ansible är samt alternativ till Ansible*
+
 >Skapades av Michael DeHaan 2012. Ansible används för att konfigurera och
 automatisera utrullning av mjukvara. Detta görs genom så kallade playbooks som
 är filer med instruktioner hur man steg för steg gör utrullningen.
 Några alternativ är: Rudder, SaltStack och Chef.
 
-
 ## Del 2
+
 ### Praktisk tillämpning
+
 ### Ansible mot en webbserver
 
 Sätt upp ett Ansible-projekt som du använder för att direkt deploya ut en webbserver.
 Vad för webbsida du servrar på webbservern spelar ingen roll.
 (Jenkins är inte inblandat här)
 Programmet som ska deployas ut på servern är Lighthttpd:
-https://cloudwafer.com/blog/installing-lighttpd-web-server-on-debian-9/
+<https://cloudwafer.com/blog/installing-lighttpd-web-server-on-debian-9/>
 
 Dokumentera hur du gjort och hur du tänkt.
 
@@ -55,8 +61,9 @@ Jag har också gjort ett enkelt shell-script för installationen/deploy av web-s
 Filerna är: install-lighttpd.yml, deploy-website.yml och install-deploy-website.sh.
 
 ### Github, Jenkins mot en webbserver
+
 Här skall du använda ditt tidigare Ansible-projekt, men du skall nu istället installera Jenkins på en server och sedan köra ansible på Jenkins servern.
-https://linuxize.com/post/how-to-install-jenkins-on-debian-10/
+<https://linuxize.com/post/how-to-install-jenkins-on-debian-10/>
 
 När du sedan committar till Github in i master-branchen så skall Jenkins deploya ut din webbsida till webbservern automatiskt via webhooks.
 
