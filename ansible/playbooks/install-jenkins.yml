@@ -1,9 +1,9 @@
 ---
-- name: Install Jenskins on the Jenkins server
+- name: Install Jenkins on the Jenkins server
   hosts: jenkinsserver
   become: yes
   tasks:
-    - name: Install some Jenkins prerequisities
+    - name: Install some prerequisities
       apt:
         update_cache: yes
         cache_valid_time: 3600
@@ -20,7 +20,7 @@
         url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
         state: present
 
-    - name: Add download repo for Jenkins
+    - name: Add a download repo link for Jenkins
       shell: sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 
     - name: Install Jenkins
@@ -36,7 +36,7 @@
         state: restarted
         enabled: yes
 
-    - name: Pause and wait for jenkins to start
+    - name: Pause and wait for Jenkins to start
       pause:
         seconds: 15
 
@@ -51,7 +51,7 @@
       changed_when: false
       when: pwd_file_exists.stat.exists
 
-    - name: Print init password Jenkins
+    - name: Print Jenkins init password, if exists
       debug:
         var: result.stdout
       when: pwd_file_exists.stat.exists
