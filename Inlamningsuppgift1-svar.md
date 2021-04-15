@@ -16,19 +16,24 @@
 ### _Vad för typ av historia kan man se i ett verktyg såsom Git?_
 
 > Git skapades av Linus Torvalds runt 2005 som ett verktyg för att hantera
-> revitioner av programvarukoden för Linux-kärnan. Anledningaen var att han inte
+> revisioner av programvarukoden för Linux-kärnan. Anledningaen var att han inte
 > tyckte det fanns något verktyg som uppfyllde de önskemål han hade.
 
 ### _Vad är en pipeline i Jenkins?_
 
 > En pipline är en uppsättning verktyg (plugins) som gör det möjligt att
 > automatisera flödet för att bygga, testa och produktionssätta mjukvara.
+> En pipline är som ett recept där man steg för steg beskriver vad som
+> ska ske.
 
 ### _Beskriv vad Jenkins är samt alternativ till Jenkins_
 
 > Jenkins är ledande vad gäller att erbjuda stöd för att bygga,
 > produktionssätta och automatisera processen för att släppa
-> nya versioner av t.ex websidor.
+> nya versioner av t.ex websidor. I Jenkins så beskrivare man steg
+> för steg vad som ska göras med mjukvaran. Det kan vara att utföra
+> fördefinerade tester, att "bygga" ihop en applikation så att man
+> sedan kan distribuera ut den till t.ex en website.
 > Några alternativ är: CruiseControl, Integrity och Buddy.
 
 ### _Beskriv vad Ansible är samt alternativ till Ansible_
@@ -36,6 +41,9 @@
 > Skapades av Michael DeHaan 2012. Ansible används för att konfigurera och
 > automatisera utrullning av mjukvara. Detta görs genom så kallade playbooks som
 > är filer med instruktioner hur man steg för steg gör utrullningen.
+> Man kan även använda Ansible till att installera och konfigurera en server
+> med nödvändiga programvara för att t.ex kunna köra den som en databas eller
+> webserver. 
 > Några alternativ är: Rudder, SaltStack och Chef.
 
 ## Del 2
