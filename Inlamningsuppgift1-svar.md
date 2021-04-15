@@ -83,10 +83,11 @@ När du sedan committar till Github in i master-branchen så skall Jenkins deplo
 > Dessa steg finns i 2 st playbooks, install-ansible.yml och install-jenkins.yml.
 > Dessa körs via ett shell-script, install-jenkins-ansible.sh.
 > För att få detta att fungera på ett smidigt sätt skapade jag ett RSA-nyckelpar
-> för användaren jenkins. Den privata nyckeln har jag också lagt in i Jenkins.
-> Den publika nyckeln har kopierats till webservern samt till GitHub (som en deplay key).
-> I GitHub har jag även skapat en webhook för att på så sätt få GitHub att trigga Jenkins
-> till att hämta den upplagda uppdateringen och skicka ut den på webservern.
+> för användaren jenkins. Den privata nyckeln finns både i filen ~/.ssh/id_rsa och så har jag också
+> lagt in i Jenkins. Den publika nyckeln har kopierats till webservern för att Jenkins ska kunna
+> deploya till denna server samt till GitHub för att Jenkins ska kunna klona repot.
+> I GitHub har jag skapat en så kallad webhook för att på så sätt få GitHub att trigga Jenkins
+> till att klona den upplagda uppdateringen och sedan skicka ut den till webservern.
 >  
 > Till playbook-filern hör även en fil, inventory.yml. Där finns bl.a information om
 > ip-adresser till servrarna.
