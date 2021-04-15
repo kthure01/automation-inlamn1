@@ -60,7 +60,10 @@ Programmet som ska deployas ut på servern är Lighthttpd:
 
 Dokumentera hur du gjort och hur du tänkt.
 
-> Jag började med att leta upp information hur man installerar lighttpd
+> När man ska installera en programvara så måste man alltid börja med att
+> ta reda på hur detta ska göras och vad som måste finnas med i installationen
+> för att programvara ska fungera på ett korrekt sätt.
+> Så jag började helt enkelt med att leta upp information hur man installerar lighttpd
 > på "vanligt" sätt. Sedan har jag helt enkelt gjort en playbook över
 > de steg som ingår i installationen. Jag har även lagt till instruktioner
 > för att starta lighttpd via Systemd. Jag gjorde även en mycket enkelt
