@@ -9,7 +9,7 @@
         update_cache: yes
         cache_valid_time: 3600
 
-    - name: Enable adn restart the lighttpd service
+    - name: Enable and restart the lighttpd service
       systemd:
         name: lighttpd
         enabled: yes
