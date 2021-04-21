@@ -3,16 +3,13 @@
   hosts: webserver
   become: yes
   tasks:
-    - name: Update apt repositories
-      apt:
-        update_cache: yes
-        cache_valid_time: 3600
-
     - name: Install lighttpd via apt
       apt:
         name: lighttpd
+        update_cache: yes
+        cache_valid_time: 3600
 
-    - name: Restart and enable service
+    - name: Enable adn restart the lighttpd service
       systemd:
         name: lighttpd
         enabled: yes

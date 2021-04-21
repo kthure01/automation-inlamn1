@@ -3,7 +3,7 @@
   hosts: webserver
   become: yes
   tasks:
-    - name: Copy index.html to src folder
+    - name: Copy index.html to web site folder
       copy:
         src: ../../website/index.html
         dest: /var/www/html/

@@ -1,7 +1,6 @@
 ---
 all:
-  hosts:
-  kthure01.com
+  hosts: kthure01.com
   vars:
     web_user: www-data
     web_group: www-data
@@ -12,9 +11,7 @@ all:
 
   children:
     webserver:
-      hosts:
-        138.68.145.148
+      hosts: 138.68.145.148
 
     jenkinsserver:
-      hosts:
-        138.68.148.26
+      hosts: 138.68.148.26
